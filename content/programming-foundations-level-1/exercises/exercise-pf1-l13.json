@@ -1,0 +1,17 @@
+{
+  "id": "exercise-pf1-l13",
+  "lessonId": "PF1-L13",
+  "title": "تطبيق عملي: خوارزمية توصية لغة البرمجة (Language Selector)",
+  "difficulty": "مبتدئ",
+  "category": "foundations",
+  "instructions": "المطلوب: قم بكتابة دالة تقترح لغة البرمجة المناسبة حسب المجال المطلوب:\n- إذا كان المجال 'web-frontend' ترجع 'JavaScript / TypeScript'.\n- إذا كان المجال 'data-science' ترجع 'Python'.\n- إذا كان المجال 'game-engine' ترجع 'C++'.\n- غير ذلك ترجع 'General Purpose'.\nثم استدعها مع 'game-engine' واطبع الناتج: 'اللغة الموصى بها: C++'.",
+  "expectedResult": "اللغة الموصى بها: C++",
+  "initialCode": "function recommendLanguage(domain) {\n  if (domain === \"web-frontend\") return \"JavaScript / TypeScript\";\n  if (domain === \"data-science\") return \"Python\";\n  if (domain === \"game-engine\") return \"C++\";\n  return \"General Purpose\";\n}\n\nlet chosen = recommendLanguage(\"game-engine\");\nconsole.log(\"اللغة الموصى بها: \" + chosen);",
+  "solutionCode": "function recommendLanguage(domain) {\n  if (domain === \"web-frontend\") return \"JavaScript / TypeScript\";\n  if (domain === \"data-science\") return \"Python\";\n  if (domain === \"game-engine\") return \"C++\";\n  return \"General Purpose\";\n}\nlet chosen = recommendLanguage(\"game-engine\");\nconsole.log(\"اللغة الموصى بها: \" + chosen);",
+  "hints": [
+    "لكل مجال متطلبات عتادية وبرمجية تجعل لغات معينة أنسب من غيرها.",
+    "محركات الألعاب تتطلب سرعة فائقة وإدارة مباشرة للذاكرة، لذلك فإن C++ هي الأنسب."
+  ],
+  "validationType": "console-output",
+  "expectedOutputPattern": "C++"
+}

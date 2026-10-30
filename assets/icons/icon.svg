@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0A0F1D"/>
+      <stop offset="50%" stop-color="#131B2E"/>
+      <stop offset="100%" stop-color="#0F172A"/>
+    </linearGradient>
+    <linearGradient id="accent-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38BDF8"/>
+      <stop offset="50%" stop-color="#6366F1"/>
+      <stop offset="100%" stop-color="#A855F7"/>
+    </linearGradient>
+    <linearGradient id="glow-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3B82F6" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#8B5CF6" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="512" height="512" rx="128" fill="url(#bg-grad)"/>
+  
+  <!-- Subtle Blueprint Grid -->
+  <circle cx="256" cy="256" r="190" fill="none" stroke="#1E293B" stroke-width="2" stroke-dasharray="6,6"/>
+  <circle cx="256" cy="256" r="130" fill="url(#glow-grad)"/>
+
+  <!-- Geometric Arabesque Octagram Accent -->
+  <g transform="translate(256, 256)" stroke="url(#accent-grad)" stroke-width="3" fill="none" opacity="0.4">
+    <rect x="-90" y="-90" width="180" height="180" transform="rotate(0)"/>
+    <rect x="-90" y="-90" width="180" height="180" transform="rotate(45)"/>
+  </g>
+
+  <!-- Glowing Code Brackets {} and Slash / -->
+  <g filter="url(#glow)">
+    <!-- Left Bracket { -->
+    <path d="M 175 160 C 145 160 145 200 145 225 C 145 240 120 256 105 256 C 120 256 145 272 145 287 C 145 312 145 352 175 352" 
+          fill="none" stroke="url(#accent-grad)" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/>
+    
+    <!-- Central Slashed Diamond / Terminal Core -->
+    <path d="M 230 320 L 282 192" 
+          fill="none" stroke="#38BDF8" stroke-width="14" stroke-linecap="round"/>
+
+    <!-- Right Bracket } -->
+    <path d="M 337 160 C 367 160 367 200 367 225 C 367 240 392 256 407 256 C 392 256 367 272 367 287 C 367 312 367 352 337 352" 
+          fill="none" stroke="url(#accent-grad)" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <!-- Central Star Sparkle -->
+  <circle cx="256" cy="192" r="5" fill="#67E8F9"/>
+  <circle cx="256" cy="320" r="5" fill="#C084FC"/>
+</svg>

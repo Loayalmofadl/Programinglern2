@@ -1,0 +1,18 @@
+{
+  "id": "exercise-pf1-l17",
+  "lessonId": "PF1-L17",
+  "title": "تطبيق عملي: إدارة المتغيرات وحساب مساحة الدائرة بالثوابت",
+  "difficulty": "مبتدئ",
+  "category": "foundations",
+  "instructions": "المطلوب: قم بتعريف ثابت باسم PI قيمته 3.14159، ومتغير باسم radius قيمته 7. ثم احسب مساحة الدائرة = PI * radius * radius. ثم قم بتعديل نصف القطر radius إلى 10 وأعد حساب المساحة. واطبع:\n'مساحة الدائرة بنصف قطر 7: 153.93791'\n'مساحة الدائرة بنصف قطر 10: 314.159'",
+  "expectedResult": "مساحة الدائرة بنصف قطر 7: 153.93791\nمساحة الدائرة بنصف قطر 10: 314.159",
+  "initialCode": "const PI = 3.14159;\nlet radius = 7;\n\nlet area1 = PI * radius * radius;\nconsole.log(\"مساحة الدائرة بنصف قطر 7: \" + area1);\n\nradius = 10; // تعديل المتغير\nlet area2 = PI * radius * radius;\nconsole.log(\"مساحة الدائرة بنصف قطر 10: \" + area2);",
+  "solutionCode": "const PI = 3.14159;\nlet radius = 7;\nlet area1 = PI * radius * radius;\nconsole.log(\"مساحة الدائرة بنصف قطر 7: \" + area1);\nradius = 10;\nlet area2 = PI * radius * radius;\nconsole.log(\"مساحة الدائرة بنصف قطر 10: \" + area2);",
+  "hints": [
+    "الكلمة const تحمي PI من أي تعديل أثناء تنفيذ الكود.",
+    "المتغير radius المعرف بـ let يمكن تغيير قيمته وتعيين قيمة جديدة له مثل 10.",
+    "تأكد من مطابقة طباعة النتائج في سطرين."
+  ],
+  "validationType": "console-output",
+  "expectedOutputPattern": "314.159"
+}

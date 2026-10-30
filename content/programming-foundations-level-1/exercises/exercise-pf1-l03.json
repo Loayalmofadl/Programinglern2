@@ -1,0 +1,18 @@
+{
+  "id": "exercise-pf1-l03",
+  "lessonId": "PF1-L03",
+  "title": "تطبيق عملي: محول النظام الثنائي والعشري",
+  "difficulty": "مبتدئ",
+  "category": "foundations",
+  "instructions": "المطلوب: قم بكتابة كود يحسب القيمة العشرية للسلسلة الثنائية '1101' عبر أوزان الخانات الرياضية: (1 * 1) + (0 * 2) + (1 * 4) + (1 * 8)، ثم احسب القيمة الثنائية للعدد العشري 13 باستخدام دالة .toString(2)، واطبع سطرين:\n'القيمة العشرية: 13'\n'القيمة الثنائية: 1101'",
+  "expectedResult": "القيمة العشرية: 13\nالقيمة الثنائية: 1101",
+  "initialCode": "// 1. حساب القيمة العشرية بالأوزان للثنائي 1101\nlet bit0 = 1;\nlet bit1 = 0;\nlet bit2 = 1;\nlet bit3 = 1;\n\nlet decimalValue = (bit0 * 1) + (bit1 * 2) + (bit2 * 4) + (bit3 * 8);\nconsole.log(\"القيمة العشرية: \" + decimalValue);\n\n// 2. تحويل العدد العشري إلى ثنائي\nlet binaryString = decimalValue.toString(2);\nconsole.log(\"القيمة الثنائية: \" + binaryString);",
+  "solutionCode": "let bit0 = 1;\nlet bit1 = 0;\nlet bit2 = 1;\nlet bit3 = 1;\nlet decimalValue = (bit0 * 1) + (bit1 * 2) + (bit2 * 4) + (bit3 * 8);\nconsole.log(\"القيمة العشرية: \" + decimalValue);\nlet binaryString = decimalValue.toString(2);\nconsole.log(\"القيمة الثنائية: \" + binaryString);",
+  "hints": [
+    "الأوزان تبدأ من اليمين بـ 1، ثم 2، 4، 8.",
+    "دالة .toString(2) في جافاسكريبت تحول أي رقم عشري إلى تمثيله الثنائي مباشرة.",
+    "شاهد كيف يتطابق التحويل اليدوي الرياضي مع النتيجة الحاسوبية."
+  ],
+  "validationType": "console-output",
+  "expectedOutputPattern": "13"
+}

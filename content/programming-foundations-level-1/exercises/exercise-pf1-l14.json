@@ -1,0 +1,19 @@
+{
+  "id": "exercise-pf1-l14",
+  "lessonId": "PF1-L14",
+  "title": "تطبيق عملي: حاسبة أحجام البيانات في الذاكرة (Memory Footprint Calculator)",
+  "difficulty": "مبتدئ",
+  "category": "foundations",
+  "instructions": "المطلوب: قم بكتابة برنامج يحسب إجمالي المساحة الذاكرية بالبايتات اللازمة لتخزين هيكل بيانات يحتوي على:\n- 10 متغيرات نوع int (كل واحد 4 بايت)\n- 5 متغيرات نوع double (كل واحد 8 بايت)\n- 20 متغير نوع char (كل واحد 1 بايت)\n- 4 متغيرات نوع bool (كل واحد 1 بايت)\nثم احسب واطبع:\n'المساحة الذاكرية الإجمالية: 104 بايت'",
+  "expectedResult": "المساحة الذاكرية الإجمالية: 104 بايت",
+  "initialCode": "let intCount = 10;\nlet doubleCount = 5;\nlet charCount = 20;\nlet boolCount = 4;\n\n// احسب المساحة الإجمالية بالبايت\nlet totalBytes = (intCount * 4) + (doubleCount * 8) + (charCount * 1) + (boolCount * 1);\nconsole.log(\"المساحة الذاكرية الإجمالية: \" + totalBytes + \" بايت\");",
+  "solutionCode": "let intCount = 10;\nlet doubleCount = 5;\nlet charCount = 20;\nlet boolCount = 4;\nlet totalBytes = (intCount * 4) + (doubleCount * 8) + (charCount * 1) + (boolCount * 1);\nconsole.log(\"المساحة الذاكرية الإجمالية: \" + totalBytes + \" بايت\");",
+  "hints": [
+    "int = 4 بايت (10 * 4 = 40).",
+    "double = 8 بايت (5 * 8 = 40).",
+    "char و bool = 1 بايت (20 + 4 = 24).",
+    "المجموع: 40 + 40 + 24 = 104 بايت."
+  ],
+  "validationType": "console-output",
+  "expectedOutputPattern": "104"
+}

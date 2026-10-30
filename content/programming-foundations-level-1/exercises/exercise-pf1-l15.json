@@ -1,0 +1,18 @@
+{
+  "id": "exercise-pf1-l15",
+  "lessonId": "PF1-L15",
+  "title": "تطبيق عملي: اختبار قسمة وباقي التوزيع (Modulus & Logic Engine)",
+  "difficulty": "مبتدئ",
+  "category": "foundations",
+  "instructions": "المطلوب: لدينا 53 قطعة حلوى نريد توزيعها بالتساوي على 5 أطفال.\n1. احسب عدد القطع التي يحصل عليها كل طفل باستخدام القسمة الصحيحة (Math.floor(53 / 5)).\n2. احسب عدد القطع المتبقية باستخدام معامل باقي القسمة (53 % 5).\n3. تحقق منطقياً مما إذا كان هناك قطع متبقية (remainder > 0).\n4. اطبع:\n'نصيب كل طفل: 10'\n'القطع المتبقية: 3'\n'هل توجد بقية؟: true'",
+  "expectedResult": "نصيب كل طفل: 10\nالقطع المتبقية: 3\nهل توجد بقية؟: true",
+  "initialCode": "let totalCandies = 53;\nlet childrenCount = 5;\n\nlet eachChild = Math.floor(totalCandies / childrenCount);\nlet remainder = totalCandies % childrenCount;\nlet hasRemainder = remainder > 0;\n\nconsole.log(\"نصيب كل طفل: \" + eachChild);\nconsole.log(\"القطع المتبقية: \" + remainder);\nconsole.log(\"هل توجد بقية؟: \" + hasRemainder);",
+  "solutionCode": "let totalCandies = 53;\nlet childrenCount = 5;\nlet eachChild = Math.floor(totalCandies / childrenCount);\nlet remainder = totalCandies % childrenCount;\nlet hasRemainder = remainder > 0;\nconsole.log(\"نصيب كل طفل: \" + eachChild);\nconsole.log(\"القطع المتبقية: \" + remainder);\nconsole.log(\"هل توجد بقية؟: \" + hasRemainder);",
+  "hints": [
+    "القسمة الصحيحة تعطي خارج القسمة فقط مع إهمال الكسر.",
+    "معامل % يحسب الباقي الرياضي الذي لا يمكن تقسيمه بالتساوي (3 قطع).",
+    "المقارنة remainder > 0 تنتج قيمة بولية true أو false."
+  ],
+  "validationType": "console-output",
+  "expectedOutputPattern": "هل توجد بقية؟: true"
+}

@@ -1,0 +1,18 @@
+{
+  "id": "exercise-pf1-l04",
+  "lessonId": "PF1-L04",
+  "title": "تطبيق عملي: حاسبة زمن التنزيل وسرعة النواقل",
+  "difficulty": "مبتدئ",
+  "category": "foundations",
+  "instructions": "المطلوب: قم بحساب زمن تنزيل ملف حجمه 80 ميجابايت (MB) عند الاتصال بشبكة سرعاتها المعلنة 64 ميجابت بالثانية (Mbps).\n1. احسب السرعة الفعلية بالـ MB/s (بقسمة Mbps على 8).\n2. احسب الزمن بالثواني (بقسمة حجم الملف على السرعة الفعلية).\n3. اطبع سطرين:\n'السرعة الفعلية: 8 MB/s'\n'زمن التنزيل المقدر: 10 ثانية'",
+  "expectedResult": "السرعة الفعلية: 8 MB/s\nزمن التنزيل المقدر: 10 ثانية",
+  "initialCode": "let fileSizeMB = 80;\nlet networkSpeedMbps = 64;\n\n// 1. احسب السرعة الفعلية بالميجابايت في الثانية\nlet actualSpeedMBps = networkSpeedMbps / 8;\nconsole.log(\"السرعة الفعلية: \" + actualSpeedMBps + \" MB/s\");\n\n// 2. احسب الزمن المطلوب بالثواني\nlet secondsNeeded = fileSizeMB / actualSpeedMBps;\nconsole.log(\"زمن التنزيل المقدر: \" + secondsNeeded + \" ثانية\");",
+  "solutionCode": "let fileSizeMB = 80;\nlet networkSpeedMbps = 64;\nlet actualSpeedMBps = networkSpeedMbps / 8;\nconsole.log(\"السرعة الفعلية: \" + actualSpeedMBps + \" MB/s\");\nlet secondsNeeded = fileSizeMB / actualSpeedMBps;\nconsole.log(\"زمن التنزيل المقدر: \" + secondsNeeded + \" ثانية\");",
+  "hints": [
+    "تذكر دائماً أن 1 بايت = 8 بت، لذلك نقسم سرعة الاتصال التسويقية على 8.",
+    "الزمن = الحجم الإجمالي ÷ معدل النقل الفعلي في الثانية.",
+    "تأكد من خروج النتيجة: 8 MB/s و 10 ثانية."
+  ],
+  "validationType": "console-output",
+  "expectedOutputPattern": "10 ثانية"
+}

@@ -1,0 +1,18 @@
+{
+  "id": "exercise-pf1-l09",
+  "lessonId": "PF1-L09",
+  "title": "تطبيق عملي: محاكي عمليات البت المنطقية (Bitwise Logic Engine)",
+  "difficulty": "مبتدئ",
+  "category": "foundations",
+  "instructions": "المطلوب: قم بتطبيق عمليات البت التالية على الرقمين 12 (ثنائياً 1100) و 10 (ثنائياً 1010):\n1. عملية AND المنطقية (12 & 10) واطبع: '12 AND 10 = 8'.\n2. عملية OR المنطقية (12 | 10) واطبع: '12 OR 10 = 14'.\n3. عملية XOR المنطقية (12 ^ 10) واطبع: '12 XOR 10 = 6'.\n4. عملية الإزاحة لليسار (5 << 1) واطبع: '5 << 1 = 10'.",
+  "expectedResult": "12 AND 10 = 8\n12 OR 10 = 14\n12 XOR 10 = 6\n5 << 1 = 10",
+  "initialCode": "let a = 12;\nlet b = 10;\n\nconsole.log(\"12 AND 10 = \" + (a & b));\nconsole.log(\"12 OR 10 = \" + (a | b));\nconsole.log(\"12 XOR 10 = \" + (a ^ b));\nconsole.log(\"5 << 1 = \" + (5 << 1));",
+  "solutionCode": "let a = 12;\nlet b = 10;\nconsole.log(\"12 AND 10 = \" + (a & b));\nconsole.log(\"12 OR 10 = \" + (a | b));\nconsole.log(\"12 XOR 10 = \" + (a ^ b));\nconsole.log(\"5 << 1 = \" + (5 << 1));",
+  "hints": [
+    "رمز AND هو &، ورمز OR هو |، ورمز XOR هو ^.",
+    "الإزاحة لليسار << 1 تعادل الضرب في 2، لذلك 5 تصبح 10.",
+    "هذه العمليات تنفذ داخل ALU في دورة ساعة واحدة فائقة السرعة."
+  ],
+  "validationType": "console-output",
+  "expectedOutputPattern": "12 AND 10 = 8"
+}

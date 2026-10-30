@@ -1,0 +1,17 @@
+{
+  "id": "exercise-pf1-l11",
+  "lessonId": "PF1-L11",
+  "title": "تطبيق عملي: مقارنة مستويات التجريد البرمجي (Abstraction Comparator)",
+  "difficulty": "مبتدئ",
+  "category": "foundations",
+  "instructions": "المطلوب: قم بكتابة برنامج يطبع مقارنة لخطوة جمع رقمين (a + b) عبر مستويات البرمجة الثلاثة:\n1. لغة الآلة: 'Machine: 000000 01000 01001 01010 00000 100000'\n2. لغة التجميع: 'Assembly: ADD R3, R1, R2'\n3. لغة عالية المستوى: 'High-Level: int c = a + b;'",
+  "expectedResult": "Machine: 000000 01000 01001 01010 00000 100000\nAssembly: ADD R3, R1, R2\nHigh-Level: int c = a + b;",
+  "initialCode": "console.log(\"Machine: 000000 01000 01001 01010 00000 100000\");\nconsole.log(\"Assembly: ADD R3, R1, R2\");\nconsole.log(\"High-Level: int c = a + b;\");",
+  "solutionCode": "console.log(\"Machine: 000000 01000 01001 01010 00000 100000\");\nconsole.log(\"Assembly: ADD R3, R1, R2\");\nconsole.log(\"High-Level: int c = a + b;\");",
+  "hints": [
+    "لاحظ كيف ينخفض تعقيد الشفرة ويزداد وضوحها كلما ارتقينا في مستوى التجريد (Abstraction).",
+    "لغة الآلة صعبة للغاية على البشر، والتجميع أفضل قليلاً، بينما اللغات عالية المستوى واضحة وطبيعية."
+  ],
+  "validationType": "console-output",
+  "expectedOutputPattern": "High-Level: int c = a + b;"
+}

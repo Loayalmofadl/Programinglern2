@@ -1,0 +1,17 @@
+{
+  "id": "exercise-pf1-l12",
+  "lessonId": "PF1-L12",
+  "title": "تطبيق عملي: محاكي مراحل بناء البرنامج (Build Pipeline Simulator)",
+  "difficulty": "مبتدئ",
+  "category": "foundations",
+  "instructions": "المطلوب: قم بكتابة برنامج يطبع مراحل بناء برنامج C++ من المصدر حتى التنفيذ بالترتيب الصحيح:\n'1. Source Code (.cpp)'\n'2. Preprocessing & Compilation -> Object Code (.obj)'\n'3. Linking with Libraries -> Executable (.exe)'\n'4. Loading into RAM & CPU Execution'",
+  "expectedResult": "1. Source Code (.cpp)\n2. Preprocessing & Compilation -> Object Code (.obj)\n3. Linking with Libraries -> Executable (.exe)\n4. Loading into RAM & CPU Execution",
+  "initialCode": "console.log(\"1. Source Code (.cpp)\");\nconsole.log(\"2. Preprocessing & Compilation -> Object Code (.obj)\");\nconsole.log(\"3. Linking with Libraries -> Executable (.exe)\");\nconsole.log(\"4. Loading into RAM & CPU Execution\");",
+  "solutionCode": "console.log(\"1. Source Code (.cpp)\");\nconsole.log(\"2. Preprocessing & Compilation -> Object Code (.obj)\");\nconsole.log(\"3. Linking with Libraries -> Executable (.exe)\");\nconsole.log(\"4. Loading into RAM & CPU Execution\");",
+  "hints": [
+    "تذكر دائماً أن الكود يمر بـ Compiler ثم Linker ثم Loader.",
+    "الرابط Linker هو من يولد ملف .exe النهائي، والمحمّل Loader هو من ينقله للـ RAM."
+  ],
+  "validationType": "console-output",
+  "expectedOutputPattern": "Loading into RAM"
+}

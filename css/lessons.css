@@ -1,0 +1,355 @@
+/**
+ * Programming Academy - Lesson, Quiz & Exercise Styles
+ */
+
+/* Lesson Container */
+.lesson-container {
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-6);
+}
+
+.lesson-top-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-4);
+  flex-wrap: wrap;
+}
+
+.breadcrumb-nav {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  font-size: var(--text-xs);
+  color: var(--text-muted);
+}
+
+.breadcrumb-nav a {
+  color: var(--text-secondary);
+}
+
+.breadcrumb-nav a:hover {
+  color: var(--accent-blue);
+}
+
+.lesson-actions {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+}
+
+.lesson-title-area {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.lesson-main-title {
+  font-size: var(--text-2xl);
+  font-weight: 800;
+  color: var(--text-primary);
+  line-height: 1.3;
+}
+
+/* Objectives Box */
+.objectives-card {
+  background: rgba(56, 189, 248, 0.05);
+  border: 1px solid rgba(56, 189, 248, 0.2);
+  border-radius: var(--radius-lg);
+  padding: var(--space-5);
+}
+
+.objectives-title {
+  font-size: var(--text-sm);
+  font-weight: 700;
+  color: var(--accent-blue);
+  margin-bottom: var(--space-3);
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+}
+
+.objectives-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.objectives-list li {
+  font-size: var(--text-sm);
+  color: var(--text-secondary);
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-2);
+}
+
+.objectives-list li::before {
+  content: "✦";
+  color: var(--accent-blue);
+  flex-shrink: 0;
+  margin-top: 1px;
+}
+
+/* Lesson Content Sections */
+.lesson-article {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-5);
+  line-height: 1.8;
+  font-size: var(--text-base);
+  color: var(--text-secondary);
+}
+
+.lesson-section-title {
+  font-size: var(--text-lg);
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-top: var(--space-4);
+  margin-bottom: var(--space-2);
+}
+
+/* Code Snippet Box in Lesson */
+.lesson-code-block {
+  border: 1px solid var(--border-medium);
+  border-radius: var(--radius-lg);
+  background-color: #070B14;
+  overflow: hidden;
+  margin: var(--space-4) 0;
+}
+
+.lesson-code-header {
+  padding: var(--space-2) var(--space-4);
+  background-color: #0F1626;
+  border-bottom: 1px solid var(--border-subtle);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.code-lang-label {
+  font-family: var(--font-mono);
+  font-size: var(--text-xs);
+  color: var(--accent-blue);
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.code-block-actions {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+}
+
+.lesson-code-content {
+  padding: var(--space-4);
+  margin: 0;
+  overflow-x: auto;
+  font-size: var(--text-sm);
+  font-family: var(--font-mono);
+  direction: ltr !important;
+  text-align: left !important;
+  background-color: transparent;
+  border: none;
+}
+
+.code-explanation {
+  padding: var(--space-3) var(--space-4);
+  background-color: rgba(255, 255, 255, 0.02);
+  border-top: 1px solid var(--border-subtle);
+  font-size: var(--text-xs);
+  color: var(--text-muted);
+}
+
+/* Lesson Summary */
+.summary-card {
+  background: linear-gradient(135deg, rgba(99, 102, 241, 0.08) 0%, rgba(139, 92, 246, 0.08) 100%);
+  border: 1px solid rgba(99, 102, 241, 0.25);
+  border-radius: var(--radius-xl);
+  padding: var(--space-6);
+  margin-top: var(--space-4);
+}
+
+.summary-title {
+  font-size: var(--text-base);
+  font-weight: 700;
+  color: var(--accent-indigo);
+  margin-bottom: var(--space-2);
+}
+
+.summary-text {
+  font-size: var(--text-sm);
+  color: var(--text-secondary);
+  line-height: 1.7;
+}
+
+/* Lesson Bottom Nav Bar */
+.lesson-nav-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--space-5) 0;
+  border-top: 1px solid var(--border-subtle);
+  margin-top: var(--space-6);
+  gap: var(--space-4);
+  flex-wrap: wrap;
+}
+
+/* Interactive Quiz Styles */
+.quiz-container {
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-6);
+}
+
+.quiz-progress-indicator {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: var(--text-sm);
+  color: var(--text-secondary);
+  font-weight: 600;
+}
+
+.question-card {
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-xl);
+  padding: var(--space-6);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-5);
+}
+
+.question-prompt {
+  font-size: var(--text-lg);
+  font-weight: 700;
+  color: var(--text-primary);
+  line-height: 1.5;
+}
+
+.question-options-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.quiz-option-btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--space-4) var(--space-5);
+  background-color: var(--bg-surface-elevated);
+  border: 1px solid var(--border-medium);
+  border-radius: var(--radius-lg);
+  font-size: var(--text-base);
+  color: var(--text-primary);
+  text-align: right;
+  transition: all var(--transition-fast);
+  cursor: pointer;
+  min-height: 52px;
+}
+
+.quiz-option-btn:hover:not(:disabled) {
+  border-color: var(--accent-blue);
+  background-color: var(--bg-surface-highlight);
+}
+
+.quiz-option-btn.selected {
+  border-color: var(--accent-indigo);
+  background-color: rgba(99, 102, 241, 0.15);
+}
+
+.quiz-option-btn.correct {
+  border-color: var(--status-success);
+  background-color: var(--status-success-bg);
+  color: #34D399;
+}
+
+.quiz-option-btn.incorrect {
+  border-color: var(--status-error);
+  background-color: var(--status-error-bg);
+  color: #F87171;
+}
+
+.quiz-explanation-box {
+  padding: var(--space-4) var(--space-5);
+  background-color: var(--bg-surface-highlight);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border-subtle);
+  font-size: var(--text-sm);
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+/* Quiz Results Card */
+.quiz-results-card {
+  text-align: center;
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-medium);
+  border-radius: var(--radius-xl);
+  padding: var(--space-8);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-4);
+}
+
+.quiz-score-badge {
+  font-size: 3rem;
+  font-weight: 800;
+  color: var(--accent-blue);
+  font-variant-numeric: tabular-nums;
+  line-height: 1;
+}
+
+/* Exercise Styles */
+.exercise-container {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-5);
+}
+
+.exercise-split {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-5);
+}
+
+@media (min-width: 1024px) {
+  .exercise-split {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.exercise-instructions-panel {
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-xl);
+  padding: var(--space-6);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+.exercise-hints-box {
+  background-color: var(--bg-surface-elevated);
+  border-radius: var(--radius-lg);
+  padding: var(--space-4);
+  border: 1px solid var(--border-subtle);
+}
+
+.hints-header {
+  font-size: var(--text-sm);
+  font-weight: 700;
+  color: var(--status-warning);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+}

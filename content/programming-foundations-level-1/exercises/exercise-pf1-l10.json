@@ -1,0 +1,18 @@
+{
+  "id": "exercise-pf1-l10",
+  "lessonId": "PF1-L10",
+  "title": "تطبيق عملي: محاكي تجميع حزم الشبكة (Packet Assembler)",
+  "difficulty": "مبتدئ",
+  "category": "foundations",
+  "instructions": "المطلوب: قم بمحاكاة إعادة ترتيب وتجميع 3 حزم شبكية وصلت بترتيب غير منتظم عبر الإنترنت.\nالحزم الثلاث:\nحزمة 3: 'العالم البرمجي!' (seq: 3)\nحزمة 1: 'مرحباً بكم ' (seq: 1)\nحزمة 2: 'في ' (seq: 2)\nقم بفرز الحزم بناءً على رقم التسلسل seq ثم دمج نصوصها وطباعة الرسالة المتكاملة: 'مرحباً بكم في العالم البرمجي!'.",
+  "expectedResult": "مرحباً بكم في العالم البرمجي!",
+  "initialCode": "let packets = [\n  { seq: 3, payload: \"العالم البرمجي!\" },\n  { seq: 1, payload: \"مرحباً بكم \" },\n  { seq: 2, payload: \"في \" }\n];\n\n// 1. فرز الحزم تصاعدياً حسب رقم التسلسل (seq)\npackets.sort((a, b) => a.seq - b.seq);\n\n// 2. دمج المحتوى بالترتيب الصحيح\nlet assembledMessage = packets.map(p => p.payload).join(\"\");\nconsole.log(assembledMessage);",
+  "solutionCode": "let packets = [\n  { seq: 3, payload: \"العالم البرمجي!\" },\n  { seq: 1, payload: \"مرحباً بكم \" },\n  { seq: 2, payload: \"في \" }\n];\npackets.sort((a, b) => a.seq - b.seq);\nlet assembledMessage = packets.map(p => p.payload).join(\"\");\nconsole.log(assembledMessage);",
+  "hints": [
+    "تستخدم الحزم في بروتوكول TCP أرقام تسلسل (Sequence Numbers) لحل مشكلة وصول الحزم بمسارات أو أزمنة مختلفة.",
+    "الدالة sort تعيد ترتيب الحزم، ثم نجمع محتوياتها بالترتيب السليم.",
+    "تأكد من طباعة الرسالة كاملة وبشكل صحيح."
+  ],
+  "validationType": "console-output",
+  "expectedOutputPattern": "مرحباً بكم في العالم البرمجي!"
+}

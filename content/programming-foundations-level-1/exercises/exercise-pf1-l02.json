@@ -1,0 +1,18 @@
+{
+  "id": "exercise-pf1-l02",
+  "lessonId": "PF1-L02",
+  "title": "تطبيق عملي: محاكاة دورة المعالجة (IPOS Model)",
+  "difficulty": "مبتدئ",
+  "category": "foundations",
+  "instructions": "المطلوب: قم بكتابة كود يحاكي دورة معالجة المعلومات الأربعة في الحاسوب لحساب فاتورة شراء. المدخلات (Input): السعر 150 والضريبة 15%. المعالجة (Processing): حساب الإجمالي = السعر + (السعر * 0.15). التخزين المؤقت في الذاكرة (Storage). ثم الإخراج (Output): طباعة النص: 'إجمالي الفاتورة: 172.5 ريال'.",
+  "expectedResult": "إجمالي الفاتورة: 172.5 ريال",
+  "initialCode": "// مرحلة الإدخال (Input)\nlet itemPrice = 150;\nlet taxRate = 0.15;\n\n// مرحلة المعالجة الحسابية في المعالج (ALU)\nlet totalWithTax = 0; // اكتب المعادلة هنا\n\n// مرحلة الإخراج (Output)\nconsole.log(\"إجمالي الفاتورة: \" + totalWithTax + \" ريال\");",
+  "solutionCode": "let itemPrice = 150;\nlet taxRate = 0.15;\nlet totalWithTax = itemPrice + (itemPrice * taxRate);\nconsole.log(\"إجمالي الفاتورة: \" + totalWithTax + \" ريال\");",
+  "hints": [
+    "قيمة الضريبة هي حاصل ضرب itemPrice في taxRate.",
+    "الإجمالي هو حاصل جمع السعر الأصلي مع قيمة الضريبة.",
+    "تأكد من أن الناتج يطابق 172.5 ريال."
+  ],
+  "validationType": "console-output",
+  "expectedOutputPattern": "172.5"
+}

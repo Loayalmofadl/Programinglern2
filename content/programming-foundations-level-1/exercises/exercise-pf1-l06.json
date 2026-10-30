@@ -1,0 +1,18 @@
+{
+  "id": "exercise-pf1-l06",
+  "lessonId": "PF1-L06",
+  "title": "تطبيق عملي: حاسبة البايتات ووحدات IEC الثنائية",
+  "difficulty": "مبتدئ",
+  "category": "foundations",
+  "instructions": "المطلوب: قم بكتابة برنامج يحسب الفرق بين حجم ذاكرة عشوائية معلنة بـ 4 GiB وحجمها بالبايت، وحجم قرص تخزين 4 GB عشري بالبايت، واطبع الفرق بينهما.\n1. احسب الحجم الثنائي 4 GiB = 4 * 1024 * 1024 * 1024.\n2. احسب الحجم العشري 4 GB = 4 * 1000 * 1000 * 1000.\n3. احسب الفرق بالبايت واطبع:\n'سعة 4 GiB بالبايت: 4294967296'\n'سعة 4 GB بالبايت: 4000000000'\n'الفرق الذاكري: 294967296 بايت'",
+  "expectedResult": "سعة 4 GiB بالبايت: 4294967296\nسعة 4 GB بالبايت: 4000000000\nالفرق الذاكري: 294967296 بايت",
+  "initialCode": "let gibBytes = 4 * Math.pow(1024, 3);\nlet gbBytes = 4 * Math.pow(1000, 3);\nlet difference = gibBytes - gbBytes;\n\nconsole.log(\"سعة 4 GiB بالبايت: \" + gibBytes);\nconsole.log(\"سعة 4 GB بالبايت: \" + gbBytes);\nconsole.log(\"الفرق الذاكري: \" + difference + \" بايت\");",
+  "solutionCode": "let gibBytes = 4 * Math.pow(1024, 3);\nlet gbBytes = 4 * Math.pow(1000, 3);\nlet difference = gibBytes - gbBytes;\nconsole.log(\"سعة 4 GiB بالبايت: \" + gibBytes);\nconsole.log(\"سعة 4 GB بالبايت: \" + gbBytes);\nconsole.log(\"الفرق الذاكري: \" + difference + \" بايت\");",
+  "hints": [
+    "الجيبيبايت يعتمد مضاعفات 1024 (2³⁰)، بينما الجيجابايت العشري يعتمد مضاعفات 1000 (10⁹).",
+    "هذا الفرق يوضح سبب رؤية سعة أقل في ويندوز عند شراء أقراص تخزين جديدة.",
+    "الفرق يقارب 295 ميجابايت لصالح الحساب الثنائي!"
+  ],
+  "validationType": "console-output",
+  "expectedOutputPattern": "294967296"
+}

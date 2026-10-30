@@ -1,0 +1,18 @@
+{
+  "id": "exercise-pf1-l08",
+  "lessonId": "PF1-L08",
+  "title": "تطبيق عملي: حاسبة صلاحيات لينكس الثمانية (Linux Permissions Calculator)",
+  "difficulty": "مبتدئ",
+  "category": "foundations",
+  "instructions": "المطلوب: قم بكتابة دالة صغيرة أو حساب برمجي يحول صلاحيات ملف نصي إلى رقمه الثماني المناسب. الصلاحيات المطلوبة للمالك: قراءة (4) وكتابة (2) وتنفيذ (1) = 7. للمجموعة: قراءة (4) وتنفيذ (1) = 5. للآخرين: قراءة (4) وتنفيذ (1) = 5. اطبع السطر: 'رمز الصلاحيات الثماني: 755'.",
+  "expectedResult": "رمز الصلاحيات الثماني: 755",
+  "initialCode": "let readWeight = 4;\nlet writeWeight = 2;\nlet executeWeight = 1;\n\n// 1. حساب صلاحيات المالك (Owner: rwx)\nlet owner = readWeight + writeWeight + executeWeight;\n\n// 2. حساب صلاحيات المجموعة (Group: r-x)\nlet group = readWeight + executeWeight;\n\n// 3. حساب صلاحيات الآخرين (Others: r-x)\nlet others = readWeight + executeWeight;\n\nlet chmodCode = \"\" + owner + group + others;\nconsole.log(\"رمز الصلاحيات الثماني: \" + chmodCode);",
+  "solutionCode": "let readWeight = 4;\nlet writeWeight = 2;\nlet executeWeight = 1;\nlet owner = readWeight + writeWeight + executeWeight;\nlet group = readWeight + executeWeight;\nlet others = readWeight + executeWeight;\nlet chmodCode = \"\" + owner + group + others;\nconsole.log(\"رمز الصلاحيات الثماني: \" + chmodCode);",
+  "hints": [
+    "الأوزان الثنائية: r=100 (4)، w=010 (2)، x=001 (1).",
+    "جمع الأوزان يولد مباشرة الرقم الثماني لكل فئة مستخدمين.",
+    "النتيجة النهائية هي 755 الشهيرة في خوادم الويب."
+  ],
+  "validationType": "console-output",
+  "expectedOutputPattern": "755"
+}

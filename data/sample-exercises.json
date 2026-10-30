@@ -1,0 +1,40 @@
+{
+  "isDemonstrationData": true,
+  "exercises": [
+    {
+      "id": "exercise-101",
+      "lessonId": "lesson-101",
+      "title": "تمرين عملي: حساب مساحة المستطيل",
+      "difficulty": "مبتدئ",
+      "category": "javascript",
+      "instructions": "المطلوب: قم بكتابة برنامج يحسب مساحة مستطيل طوله 8 وعرضه 5 باستخدام المتغيرات والضرب، ثم اطبع الناتج باستخدام console.log بصيغة: المساحة هي: 40",
+      "expectedResult": "المساحة هي: 40",
+      "initialCode": "// 1. عرف متغير باسم length قيمته 8\nlet length = 8;\n\n// 2. عرف متغير باسم width قيمته 5\nlet width = 5;\n\n// 3. احسب المساحة (الطول ضرب العرض)\nlet area = 0; // استبدل 0 بالمعادلة الصحيحة\n\n// 4. اطبع النتيجة\nconsole.log(\"المساحة هي: \" + area);",
+      "solutionCode": "let length = 8;\nlet width = 5;\nlet area = length * width;\nconsole.log(\"المساحة هي: \" + area);",
+      "hints": [
+        "معادلة مساحة المستطيل هي: الطول مضروباً في العرض (length * width).",
+        "رمز عملية الضرب في لغات البرمجة هو النجمة (*).",
+        "تأكد من إسناد حاصل الضرب إلى متغير area قبل أمر console.log."
+      ],
+      "validationType": "console-output",
+      "expectedOutputPattern": "40"
+    },
+    {
+      "id": "exercise-102",
+      "lessonId": "lesson-103",
+      "title": "تمرين عملي: التحقق من الرقم الزوجي والفردي",
+      "difficulty": "مبتدئ",
+      "category": "javascript",
+      "instructions": "قم بكتابة شرط يتحقق مما إذا كان المتغير number زوجياً أم فردياً باستخدام باقي القسمة (%). إذا كان زوجياً اطبع 'زوجي'، وإن كان فردياً اطبع 'فردي'.",
+      "expectedResult": "فردي (عندما تكون القيمة 7)",
+      "initialCode": "let number = 7;\n\n// اكتب جملة if / else هنا للتحقق\nif (number % 2 === 0) {\n  console.log(\"زوجي\");\n} else {\n  // أكمل الكود هنا\n}",
+      "solutionCode": "let number = 7;\nif (number % 2 === 0) {\n  console.log(\"زوجي\");\n} else {\n  console.log(\"فردي\");\n}",
+      "hints": [
+        "أي رقم زوجي يقبل القسمة على 2 بدون باقي، أي number % 2 === 0.",
+        "في كتلة else، استخدم console.log(\"فردي\");."
+      ],
+      "validationType": "console-output",
+      "expectedOutputPattern": "فردي"
+    }
+  ]
+}
